@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Nimbus Demo</title>
+    <meta name="description" content="Services offered by Nimbus demo site." />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-row">
+            <div class="brand"><a href="./index.html">Nimbus</a></div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+            <nav id="primaryNav" class="primary" aria-label="Primary">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./services.html" aria-current="page">Services</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section class="card reveal" data-reveal>
+            <h1>Services</h1>
+            <p class="muted">Click a section to expand the details.</p>
+        </section>
+
+        <section class="card reveal" data-reveal>
+            <button class="btn" data-accordion-btn aria-expanded="false" aria-controls="svc1">Web Design</button>
+            <div id="svc1" class="card hidden">
+                <p>Modern, accessible designs with a focus on UX.</p>
+            </div>
+
+            <button class="btn" data-accordion-btn aria-expanded="false" aria-controls="svc2">Development</button>
+            <div id="svc2" class="card hidden">
+                <p>Frontend engineering with performance in mind.</p>
+            </div>
+
+            <button class="btn" data-accordion-btn aria-expanded="false" aria-controls="svc3">Optimization</button>
+            <div id="svc3" class="card hidden">
+                <p>SEO, accessibility, and lighthouse improvements.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; <time datetime="2025">2025</time> Nimbus Demo</small>
+        </div>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>
